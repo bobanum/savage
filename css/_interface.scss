@@ -1,0 +1,35 @@
+.interface {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    > header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+        img {
+            height: 1in;
+            display: block;
+        }
+    }
+    > footer {
+        display: flex;
+        font-size: smaller;
+        padding: 0.5em;
+        background-color: var(--color-sec);
+        color: #fff;
+        justify-content: space-between;
+    }
+    > nav {
+        background-color: var(--color-sec);
+        color: white;
+        font-size: .8em;
+    }
+}
+#app {
+    flex-grow: 1;
+    background-color: hsl(var(--hue-main), 100%, 95%);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

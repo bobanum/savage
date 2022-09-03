@@ -1,0 +1,7 @@
+:root {
+    --hue-main: 35;
+    --hue-sec: 162;
+    --color-main: hsl(var(--hue-main), 100%, 50%);
+    --color-sec: hsl(var(--hue-sec), 100%, 17%);
+    --txt-main: hsl(0, 0%, 20%);
+}

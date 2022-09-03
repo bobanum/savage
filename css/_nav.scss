@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: center;
+    a {
+        color: inherit;
+        display: flex;
+        text-decoration: none;
+        height: 2.5em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 1em;
+    }
+    ul {
+        margin: .25em 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+
+    }
+    li {
+        &:hover {
+            background-color: #0008;
+            color: hsl(var(--hue-main), 100%, 50%);
+        }
+    }
+}

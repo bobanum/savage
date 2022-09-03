@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --hue-main: 35;
+  --hue-sec: 162;
+  --color-main: hsl(var(--hue-main), 100%, 50%);
+  --color-sec: hsl(var(--hue-sec), 100%, 17%);
+  --txt-main: hsl(0, 0%, 20%);
+}
+
+html {
+  height: 100%;
+  font-size: 18px;
+  background-color: var(--color-main);
+  color: var(--txt-main);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.interface > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.interface > header img {
+  height: 1in;
+  display: block;
+}
+.interface > footer {
+  display: flex;
+  font-size: smaller;
+  padding: 0.5em;
+  background-color: var(--color-sec);
+  color: #fff;
+  justify-content: space-between;
+}
+.interface > nav {
+  background-color: var(--color-sec);
+  color: white;
+  font-size: 0.8em;
+}
+
+#app {
+  flex-grow: 1;
+  background-color: hsl(var(--hue-main), 100%, 95%);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: inherit;
+  display: flex;
+  text-decoration: none;
+  height: 2.5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1em;
+}
+nav ul {
+  margin: 0.25em 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+nav li:hover {
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  color: hsl(var(--hue-main), 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
